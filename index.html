@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Diamond World | Révélez votre éclat naturel</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Poppins,sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+
+background:#0b0b0b;
+color:white;
+
+}
+
+header{
+
+position:fixed;
+top:0;
+left:0;
+width:100%;
+padding:15px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:black;
+box-shadow:0 0 20px rgba(255,215,0,.15);
+z-index:1000;
+
+}
+
+.logo{
+
+display:flex;
+align-items:center;
+gap:10px;
+
+}
+
+.logo img{
+
+width:65px;
+height:65px;
+border-radius:50%;
+
+}
+
+.logo h2{
+
+color:#D4AF37;
+font-size:28px;
+
+}
+
+nav a{
+
+text-decoration:none;
+margin-left:25px;
+color:white;
+font-weight:500;
+transition:.4s;
+
+}
+
+nav a:hover{
+
+color:#D4AF37;
+
+}
+
+.hero{
+
+padding-top:140px;
+padding-left:8%;
+padding-right:8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+min-height:100vh;
+
+}
+
+.hero-text{
+
+width:50%;
+
+}
+
+.hero-text h1{
+
+font-size:65px;
+color:#D4AF37;
+margin-bottom:20px;
+
+}
+
+.hero-text p{
+
+font-size:18px;
+line-height:32px;
+margin-bottom:30px;
+
+}
+
+.btn{
+
+display:inline-block;
+padding:15px 35px;
+background:#D4AF37;
+color:black;
+text-decoration:none;
+font-weight:bold;
+border-radius:40px;
+transition:.4s;
+
+}
+
+.btn:hover{
+
+background:white;
+
+}
+
+.hero-image{
+
+width:40%;
+
+}
+
+.hero-image img{
+
+width:100%;
+border-radius:20px;
+box-shadow:0 0 35px rgba(212,175,55,.35);
+
+}
+
+section{
+
+padding:90px 8%;
+
+}
+
+.title{
+
+text-align:center;
+font-size:42px;
+color:#D4AF37;
+margin-bottom:50px;
+
+}
+
+.categories{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+
+}
+
+.cat{
+
+background:#151515;
+padding:35px;
+border-radius:15px;
+text-align:center;
+transition:.4s;
+
+}
+
+.cat:hover{
+
+transform:translateY(-10px);
+
+}
+
+.cat h3{
+
+margin-bottom:10px;
+color:#D4AF37;
+
+}
+
+.products{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;
+
+}
+
+.card{
+
+background:#161616;
+border-radius:20px;
+overflow:hidden;
+transition:.4s;
+
+}
+
+.card:hover{
+
+transform:translateY(-10px);
+
+}
+
+.card img{
+
+width:100%;
+height:300px;
+object-fit:cover;
+
+}
+
+.card-body{
+
+padding:20px;
+
+}
+
+.card-body h3{
+
+color:#D4AF37;
+
+}
+
+.price{
+
+font-size:22px;
+margin:15px 0;
+font-weight:bold;
+
+}
+
+.buy{
+
+display:inline-block;
+background:#D4AF37;
+padding:12px 25px;
+text-decoration:none;
+color:black;
+border-radius:30px;
+font-weight:bold;
+
+}
+
+footer{
+
+background:#000;
+padding:40px;
+text-align:center;
+margin-top:60px;
+
+}
+
+footer h3{
+
+color:#D4AF37;
+
+}
+
+.contact{
+
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
+
+}
+
+input,textarea{
+
+width:100%;
+padding:15px;
+margin-bottom:20px;
+background:#1d1d1d;
+border:none;
+color:white;
+
+}
+
+button{
+
+background:#D4AF37;
+padding:15px;
+border:none;
+width:100%;
+font-weight:bold;
+cursor:pointer;
+
+}
+
+@media(max-width:900px){
+
+.hero{
+
+flex-direction:column;
+
+}
+
+.hero-text{
+
+width:100%;
+text-align:center;
+
+}
+
+.hero-image{
+
+width:100%;
+margin-top:40px;
+
+}
+
+.contact{
+
+grid-template-columns:1fr;
+
+}
+
+nav{
+
+display:none;
+
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+
+<img src="./daimond world/logo.png" alt="logo">
+
+<h2>Diamond World</h2>
+
+</div>
+
+<nav>
+
+<a href="#">Accueil</a>
+
+<a href="#produits">Produits</a>
+
+<a href="#categories">Catégories</a>
+
+<a href="#contact">Contact</a>
+
+</nav>
+
+</header>
+
+<section class="hero">
+
+<div class="hero-text">
+
+<h1>Révélez votre éclat naturel</h1>
+
+<p>
+
+Diamond World vous propose des parfums,
+des gammes blanchissantes,
+des savons,
+des huiles naturelles
+et des soins de beauté haut de gamme.
+
+</p>
+
+<a href="#produits" class="btn">Découvrir nos produits</a>
+
+</div>
+
+<div class="hero-image">
+
+<img src="./daimond world/logo.png" alt="Hero">
+
+
+</div>
+
+</section><!-- ================= CATEGORIES ================= -->
+
+<section id="categories">
+
+<h2 class="title">Nos Catégories</h2>
+
+<div class="categories">
+
+<div class="cat">
+<h3>✨ Parfums Femme</h3>
+<p>Des fragrances élégantes et raffinées pour révéler votre féminité.</p>
+</div>
+
+<div class="cat">
+<h3>🔥 Parfums Homme</h3>
+<p>Des senteurs puissantes, fraîches et séduisantes.</p>
+</div>
+
+<div class="cat">
+<h3>🧴 Gamme Blanchissante</h3>
+<p>Des soins conçus pour illuminer et unifier votre peau.</p>
+</div>
+
+<div class="cat">
+<h3>🧼 Savons Naturels</h3>
+<p>Des savons de qualité pour une peau douce et éclatante.</p>
+</div>
+
+<div class="cat">
+<h3>🌿 Huiles Naturelles</h3>
+<p>Hydratation et nutrition pour la peau et les cheveux.</p>
+</div>
+
+<div class="cat">
+<h3>💎 Soins Beauté</h3>
+<p>Diamond World prend soin de votre beauté au quotidien.</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= PRODUITS ================= -->
+
+<section id="produits">
+
+<h2 class="title">Nos Produits</h2>
+
+<div class="products">
+
+<div class="card">
+
+<img src="./daimond world/parfum1.jpg" alt="parfum1">
+
+<div class="card-body">
+
+<h3>La Petite Robe Noire</h3>
+
+<p>Essence de parfum Collection Paris.</p>
+
+<div class="price">8 500 FCFA</div>
+
+<a href="#contact" class="buy">Commander</a>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="./daimond world/parfum1.jpg"alt="parfum1">
+
+<div class="card-body">
+
+<h3>Invictus</h3>
+
+<p>Parfum homme élégant et longue tenue.</p>
+
+<div class="price">8 500 FCFA</div>
+
+<a href="#contact" class="buy">Commander</a>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="./daimond world/parfum2.jpg"alt="parfum2">
+
+<div class="card-body">
+
+<h3>Zara Man Silver</h3>
+
+<p>Parfum masculin premium.</p>
+
+<div class="price">8 500 FCFA</div>
+
+<a href="#contact" class="buy">Commander</a>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="./daimond world/parfum3.jpg" alt="parfum3">
+
+<div class="card-body">
+
+<h3>Velvet Musk</h3>
+
+<p>Parfum luxueux et raffiné.</p>
+
+<div class="price">8 500 FCFA</div>
+
+<a href="#contact" class="buy">Commander</a>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="./daimond world/savon.jpg"alt="savon">
+
+<div class="card-body">
+
+<h3>Gamme Blanchissante passion</h3>
+
+<p>Pour une peau lumineuse.</p>
+
+<div class="price">20 000 FCFA</div>
+
+<a href="#contact" class="buy">Commander</a>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="./daimond world/gamme.jpg"alt="gamme">
+
+<div class="card-body">
+
+<h3>Savon noir</h3>
+
+<p>Savon naturel pour tous types de peau.</p>
+
+<div class="price">7 000 FCFA</div>
+
+<a href="#contact" class="buy">Commander</a>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="./daimond world/laitdecorps.jpg"alt="laitdecorps">
+
+<div class="card-body">
+
+<h3>lait de corps</h3>
+
+<p>Nettoyage et éclat naturel.</p>
+
+<div class="price">8 500 FCFA</div>
+
+<a href="#contact" class="buy">Commander</a>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="./daimond world/molato.jpg"alt="molato">
+
+<div class="card-body">
+
+<h3>Savon Molato</h3>
+
+<p>Teint clair et teint noir.</p>
+
+<div class="price">6 500 FCFA</div>
+
+<a href="#contact" class="buy">Commander</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section><!-- ================= CONTACT ================= -->
+
+<section id="contact">
+
+<h2 class="title">Contactez-nous</h2>
+
+<div class="contact">
+
+<div>
+
+<h3 style="color:#D4AF37;margin-bottom:20px;">
+Diamond World
+</h3>
+
+<p style="margin-bottom:15px;">
+📞 0719918565
+</p>
+
+<p style="margin-bottom:15px;">
+📞 0503589699
+</p>
+
+<p style="margin-bottom:15px;">
+💎 Révélez votre éclat naturel.
+</p>
+
+<p style="margin-bottom:15px;">
+✔ Parfums Femme
+</p>
+
+<p style="margin-bottom:15px;">
+✔ Parfums Homme
+</p>
+
+<p style="margin-bottom:15px;">
+✔ Savons
+</p>
+
+<p style="margin-bottom:15px;">
+✔ Gammes Blanchissantes
+</p>
+
+<p style="margin-bottom:15px;">
+✔ Huiles Naturelles
+</p>
+
+</div>
+
+<div>
+
+<form>
+
+<input
+type="text"
+placeholder="Votre nom"
+required>
+
+<input
+type="tel"
+placeholder="Votre numéro"
+required>
+
+<input
+type="email"
+placeholder="Votre email">
+
+<textarea
+rows="6"
+placeholder="Votre commande ou votre message"></textarea>
+
+<button type="submit">
+Envoyer la commande
+</button>
+
+</form>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+
+<h3>Diamond World</h3>
+
+<p style="margin-top:15px;">
+La beauté rencontre l'excellence.
+</p>
+
+<p style="margin-top:10px;">
+Révélez votre éclat naturel.
+</p>
+
+<p style="margin-top:10px;">
+© 2026 Diamond World - Tous droits réservés.
+</p>
+
+</footer>
+
+</body>
+
+</html>
